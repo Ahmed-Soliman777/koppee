@@ -61,23 +61,12 @@ section {
     text-transform: capitalize;
     margin: 10px 0 10px 0;
 }
-main::after {
-    content: "";
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-image: url(./img/overlay-bottom.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -45px;
-    top: 100%;
-}
 
 /* ---------------- global variables end -------------------- */
 
 /* ---------------- main page start -------------------- */
 .main_page {
-    background-image: url(./img/carousel-1.jpg);
+    background-image: url(/img/carousel-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #312422;
@@ -86,7 +75,15 @@ main::after {
 }
 .main_page::after{
     position: absolute;
-    background-image: url(./img/overlay-bottom.png);
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-image: url(/img/overlay-bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -45px;
+    top: 100%;
 }
 .flex_header, .flex_nav{
     display: flex;
@@ -259,9 +256,15 @@ ul{
 }
 .services::after{
     position: absolute;
-    background-image: url(./img/overlay-top.png);
-    top: 0%;
-    bottom: 0%;
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-image: url(/img/overlay-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 99%;
+    z-index: 3;
 }
 .flex_services{
     margin-top: 2%;
@@ -273,7 +276,7 @@ ul{
 .serv_img{ 
     height: 125px;
     width: 400px;
-    background-image: url(./img/service-1.jpg);
+    background-image: url(/img/service-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -321,19 +324,26 @@ ul{
 /* ---------------- services section end -------------------- */
 /* ---------------- offer section start -------------------- */
 .offer{
-    background-image: url(./img/bg.jpg);
+    background-image: url(/img/bg.jpg);
     background-size: cover;
     position: relative;
     padding: 0;
 }
 .offer::after{
     position: absolute;
-    background-image: url(./img/overlay-bottom.png);
-    top: 0%;
+    content: "";
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-image: url(/img/overlay-bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 91%;
+    z-index: 3;
 }
 .off_img_overlay{
-    padding: 5% 0 5% 0;
-    background-color: #0000006e;
+    padding: 4% 0 5% 0;
+    background-color: #00000096;
     text-align: center;
 }
 .off_tit{
@@ -368,6 +378,11 @@ ul{
         padding: 1%;
     }
 }
+@media (max-width:768px) and (min-width:0px){
+.off_img_overlay{
+    padding: 10% 0 13% 0;
+}
+}
 @media (max-width:520px) and (min-width:0px){
     .off_tit{
         font-style: 2rem;
@@ -380,10 +395,128 @@ ul{
     }
 }
 /* ---------------- offer section end -------------------- */
-
 /* ---------------- menu section start -------------------- */
-
+.menu{
+    background-color: var(--main_bg_color);
+    position: relative;
+}
+.menu::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-image: url(/img/overlay-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 94%;
+    z-index: 3;
+}
+.flex_menu{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.drink_title{
+    text-transform: capitalize;
+}
+.flex_drink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+.drink_one{
+    height: 200px;
+    width: 200px;
+    background-image: url(/img/menu-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.drink_two{
+    height: 200px;
+    width: 200px;
+    background-image: url(/img/menu-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.drink_three{
+    height: 200px;
+    width: 200px;
+    background-image: url(/img/menu-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.drink_one div, .drink_two div, .drink_three div{
+    content: "";
+    position: absolute;
+    padding: 10% 5% 10% 5%;
+    background-color: var(--brown_color);
+    border-radius: 20px;
+    font-weight: bold;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    top: 20%;
+    left: 70%;
+}
+.drink_tit{
+    text-transform: capitalize;
+}
+@media (max-width: 1024px) and (min-width:768px){
+    .drink_one div, .drink_two div, .drink_three div{
+        top:25%;
+    }
+}
+@media (max-width:768px) and (min-width:670px){
+    .flex_menu{
+        flex-direction: column;
+    }
+    .drink_one div, .drink_two div, .drink_three div{
+        top:15%;
+    }
+}
+@media (max-width:670px) and (min-width:320px){
+    .flex_menu{
+        flex-direction: column;
+        row-gap: 90px;
+    }
+    .flex_drink{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .drink_title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .drink_info{
+        text-align: center;
+    }
+    .drink_one, .drink_two, .drink_three{
+        height: 100px;
+        width: 100px;
+    }
+    .drink_one div, .drink_two div, .drink_three div{
+        top: -5%;
+    }
+}
 /* ---------------- menu section end -------------------- */
+/* ---------------- book start -------------------- */
+.book{
+    background-color: var(--main_bg_color);
+    padding: 2% 0 2% 0;
+}
+.book_bg{
+    background-image: url(/img/bg.jpg);
+}
+/* ---------------- book end -------------------- */
 
 
 /* -----------------------clients section end- ----------------------- */
