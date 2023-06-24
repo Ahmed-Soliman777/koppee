@@ -400,18 +400,6 @@ ul{
     background-color: var(--main_bg_color);
     position: relative;
 }
-.menu::after{
-    position: absolute;
-    content: "";
-    display: block;
-    height: 10%;
-    width: 100%;
-    background-image: url(/img/overlay-top.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 94%;
-    z-index: 3;
-}
 .flex_menu{
     display: flex;
     justify-content: space-between;
@@ -483,10 +471,10 @@ ul{
         top:15%;
     }
 }
-@media (max-width:670px) and (min-width:320px){
+@media (max-width:670px) and (min-width:20px){
     .flex_menu{
         flex-direction: column;
-        row-gap: 90px;
+        row-gap: 20px;
     }
     .flex_drink{
         flex-direction: column;
@@ -511,10 +499,95 @@ ul{
 /* ---------------- book start -------------------- */
 .book{
     background-color: var(--main_bg_color);
-    padding: 2% 0 2% 0;
+    padding:1px;
+    position: relative;
+}
+.book::before{
+    content: "";
+    position: absolute;
+    background-image: url(/img/overlay-top.png);
+    background-size: contain;
+    height: 5%;
+    width: 100%;
+    top: 0;
+}
+.book::after{
+    content: "";
+    position: absolute;
+    background-image: url(/img/overlay-bottom.png);
+    background-size: contain;
+    height: 5%;
+    width: 100%;
+    bottom: 0%;
 }
 .book_bg{
     background-image: url(/img/bg.jpg);
+}
+.flex_book{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.book_off{
+    background-color: #00000062;
+    padding: 5% 0 5% 5%;
+}
+.book_off :not(:first-child){
+    color: #fff;
+}
+.book_title{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.book_tit{
+    color: var(--brown_color);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.sign_up_book{
+    padding: 5%;
+    background-color: #000000a2;
+}
+.sign_up_book > :nth-child(1){
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sign_up_book div *{
+    width: 100%;
+    margin-bottom: 1.5%;
+    padding: 2%;
+    border: var(--brown_color) 1px solid;
+    background-color: transparent;
+    color: #fffbf2;
+}
+.sign_up_book div :nth-child(1){
+    text-transform: capitalize;
+}
+.sign_up_book div *::placeholder{
+    color: #c3c3c3;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sign_up_book div :nth-child(6){
+    text-transform: capitalize;
+    background-color: var(--brown_color);
+    font-weight: 600;
+}
+.sign_up_book div :nth-child(6):hover{
+    text-transform: capitalize;
+    background-color: #a17d54;
+}
+@media (max-width:768px) and (min-width:25px){
+    .flex_book{
+        grid-template-columns: 100%;
+    }
+    .book::before, .book::after{
+        background-repeat: repeat-x;
+    }
+    .book::after{
+        bottom: -2%;
+    }
 }
 /* ---------------- book end -------------------- */
 
