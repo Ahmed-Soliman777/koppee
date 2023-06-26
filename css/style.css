@@ -725,7 +725,6 @@ hr{
 .flex_foot > div{
     text-transform: capitalize;
     text-align: center;
-    margin-left: 38%;
 }
 .flex_foot div span{
     color: var(--brown_color);
@@ -748,4 +747,4 @@ hr{
         border: transparent;
     }
 }
-/* ------------------------footer start-------------------------------- */
+/* ------------------------footer end-------------------------------- */
