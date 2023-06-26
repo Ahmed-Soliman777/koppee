@@ -27,6 +27,7 @@ body {
 * {
     font-family: var(--main-font);
     scroll-behavior: smooth;
+    box-sizing: border-box
 }
 
 .container {
@@ -607,7 +608,7 @@ ul {
 /* ---------------- book start -------------------- */
 .book {
     background-color: var(--main_bg_color);
-    /* padding: 1px; */
+    padding: 0px;
     position: relative;
 }
 
@@ -890,20 +891,20 @@ hr {
     text-transform: capitalize;
     text-align: center;
 }
-
+.iol{
+    background: #00000080;
+}
 .flex_foot div span {
     color: var(--brown_color);
 }
-
-.to_top {
+.flex_foot a{
     padding: 0.75%;
     background-color: var(--brown_color);
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     right: 20px;
     z-index: 999;
 }
-
 @media (max-width:768px) and (min-width: 0px) {
     .flex_footer {
         grid-template-columns: 100%;
