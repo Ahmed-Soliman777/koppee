@@ -75,7 +75,7 @@ section {
 
 /* ---------------- main page start -------------------- */
 .main_page {
-    background-image: url(./img/carousel-1.jpg);
+    background-image: url(../img/carousel-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #312422;
@@ -89,7 +89,7 @@ section {
     display: block;
     height: 50px;
     width: 100%;
-    background-image: url(./img/overlay-bottom.png);
+    background-image: url(../img/overlay-bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -45px;
@@ -311,7 +311,7 @@ ul {
     display: block;
     height: 50px;
     width: 100%;
-    background-image: url(./img/overlay-top.png);
+    background-image: url(../img/overlay-top.png);
     background-size: cover;
     background-repeat: no-repeat;
     top: 99%;
@@ -329,7 +329,7 @@ ul {
 .serv_img {
     height: 125px;
     width: 400px;
-    background-image: url(./img/service-1.jpg);
+    background-image: url(../img/service-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -386,7 +386,7 @@ ul {
 /* ---------------- services section end -------------------- */
 /* ---------------- offer section start -------------------- */
 .offer {
-    background-image: url(./img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     position: relative;
     padding: 0;
@@ -398,7 +398,7 @@ ul {
     display: block;
     height: 10%;
     width: 100%;
-    background-image: url(/img/overlay-bottom.png);
+    background-image: url(../img/overlay-bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     top: 91%;
@@ -501,7 +501,7 @@ ul {
 .drink_one {
     height: 200px;
     width: 200px;
-    background-image: url(./img/menu-1.jpg);
+    background-image: url(../img/menu-1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -511,7 +511,7 @@ ul {
 .drink_two {
     height: 200px;
     width: 200px;
-    background-image: url(./img/menu-2.jpg);
+    background-image: url(../img/menu-2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -521,7 +521,7 @@ ul {
 .drink_three {
     height: 200px;
     width: 200px;
-    background-image: url(./img/menu-3.jpg);
+    background-image: url(../img/menu-3.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -615,7 +615,7 @@ ul {
 .book::before {
     content: "";
     position: absolute;
-    background-image: url(./img/overlay-top.png);
+    background-image: url(../img/overlay-top.png);
     background-size: contain;
     height: 5%;
     width: 100%;
@@ -625,7 +625,7 @@ ul {
 .book::after {
     content: "";
     position: absolute;
-    background-image: url(./img/overlay-bottom.png);
+    background-image: url(../img/overlay-bottom.png);
     background-size: contain;
     height: 5%;
     width: 100%;
@@ -633,7 +633,7 @@ ul {
 }
 
 .book_bg {
-    background-image: url(./img/bg.jpg);
+    background-image: url(../img/bg.jpg);
 }
 
 .flex_book {
@@ -742,17 +742,17 @@ ul {
 .client_img_three {
     height: 100px;
     width: 100px;
-    background-image: url(./img/testimonial-1.jpg);
+    background-image: url(../img/testimonial-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .client_img_two {
-    background-image: url(./img/testimonial-2.jpg);
+    background-image: url(../img/testimonial-2.jpg);
 }
 
 .client_img_three {
-    background-image: url(./img/testimonial-3.jpg);
+    background-image: url(../img/testimonial-3.jpg);
 }
 
 .client_name,
@@ -790,7 +790,7 @@ ul {
 /* -----------------------clients section end ------------------------ */
 /* ------------------------footer start-------------------------------- */
 footer {
-    background-image: url(./img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -807,7 +807,7 @@ footer::after {
 footer::before {
     position: absolute;
     content: "";
-    background-image: url(./img/overlay-top.png);
+    background-image: url(../img/overlay-top.png);
     background-repeat: repeat-x;
     width: 100%;
     height: 5%;
